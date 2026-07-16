@@ -57,17 +57,39 @@
             <div class="contact-info reveal">
                 <p class="eyebrow">Contact</p>
                 <h2>Ready to feel your best?</h2>
-                <p>Book your appointment today and let us enhance your natural beauty.</p>
-                <ul>
-                    <li><i class="bi bi-telephone"></i> 079 868 81 11</li>
-                    <li><i class="bi bi-geo-alt"></i> Dorfplatz 4, 3902 Glis</li>
-                    <li><i class="bi bi-instagram"></i> @luxebeauty.ch</li>
+                <p>Appointments can be booked exclusively through our Fresha online booking system. This contact form is
+                    intended for general inquiries only.</p>
+                <ul class="contact-links">
+                    <li>
+                        <a href="https://wa.me/41798688111" target="_blank" rel="noopener"
+                            aria-label="Contact Luxe Beauty on WhatsApp">
+                            <i class="bi bi-whatsapp"></i> 079 868 81 11
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://www.google.com/maps/place/Dorfpl.+4,+3902+Brig-Glis,+Switzerland/"
+                            target="_blank" rel="noopener" aria-label="Open Luxe Beauty location in Google Maps">
+                            <i class="bi bi-geo-alt"></i> Dorfplatz 4, 3902 Glis
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://instagram.com/luxebeauty.ch" target="_blank" rel="noopener"
+                            aria-label="Open Luxe Beauty Instagram">
+                            <i class="bi bi-instagram"></i> @luxebeauty.ch
+                        </a>
+                    </li>
                 </ul>
+                <div class="contact-actions">
+                    <a class="btn btn-dark" href="booking.php">Book via Fresha <span>→</span></a>
+                    <a class="contact-small-link" href="https://wa.me/41798688111" target="_blank"
+                        rel="noopener">Message us on WhatsApp</a>
+                </div>
             </div>
-            <form class="contact-form reveal" action="https://formspree.io/f/xbdndqny" method="post"><label>Name<input required type="text"
-                        name="name" placeholder="Your name"></label><label>Email<input required type="email"
-                        name="phonenumber" placeholder="Phone number"></label><label>Phone Number<input required type="number"
-                        name="email" placeholder="your@email.com"></label><label>Service<select name="service">
+            <form class="contact-form reveal" action="https://formspree.io/f/xbdndqny" method="post"><label>Full
+                    Name<input required type="text" name="name" placeholder="Full name"></label><label>Email<input
+                        required type="email" name="email" placeholder="your@email.com"></label><label>Phone
+                    Number<input required type="tel" name="phonenumber"
+                        placeholder="Phone number"></label><label>Service<select name="service">
                         <option value="">Select a service</option>
                         <option>Lash Extensions</option>
                         <option>Lash Lift</option>
@@ -81,12 +103,11 @@
                     type="submit">Send Message</button></form>
         </section>
         <section class="section">
-            <div class="map-box reveal">
-                <div><i class="bi bi-geo-alt-fill"></i>
-                    <p class="eyebrow center">Location</p>
-                    <h2>Dorfplatz 4, 3902 Glis</h2>
-                    <p>Open the map link from the social icons or add your embedded Google Map here later.</p>
-                </div>
+            <div class="map-box map-embed reveal">
+                <iframe src="https://www.google.com/maps?q=Dorfpl.+4,+3902+Brig-Glis,+Switzerland&output=embed"
+                    width="100%" height="420" style="border:0;" allowfullscreen="" loading="lazy"
+                    referrerpolicy="no-referrer-when-downgrade" title="Luxe Beauty location on Google Maps">
+                </iframe>
             </div>
         </section>
     </main>
@@ -94,7 +115,10 @@
         <div><a class="logo" href="index.html"><span>Luxe Beauty</span><small>Lashes • Brows • Nails • Teeth
                     Whitening</small></a></div>
         <div><strong>Contact</strong>
-            <p>079 868 81 11<br>Dorfplatz 4, 3902 Glis<br>@luxebeauty.ch</p>
+            <p><a href="https://wa.me/41798688111" target="_blank" rel="noopener">079 868 81 11</a><br><a
+                    href="https://www.google.com/maps/place/Dorfpl.+4,+3902+Brig-Glis,+Switzerland/" target="_blank"
+                    rel="noopener">Dorfplatz 4, 3902 Glis</a><br><a href="https://instagram.com/luxebeauty.ch"
+                    target="_blank" rel="noopener">@luxebeauty.ch</a></p>
         </div>
         <div><strong>Opening Hours</strong>
             <p>Termin nach Vereinbarung</p>
@@ -102,8 +126,8 @@
         <div><strong>Follow Us</strong>
             <p><a href="https://instagram.com/luxebeauty.ch" target="_blank">Instagram</a></p>
         </div>
-        <div class="footer-bottom">© 2026 Luxe Beauty. All rights reserved. Build by Arian Kapllanaj<span><a href="#">Impressum</a> <a
-                    href="#">Datenschutz</a></span></div>
+        <div class="footer-bottom">© 2026 Luxe Beauty. All rights reserved. Build by Arian Kapllanaj<span><a
+                    href="#">Impressum</a> <a href="#">Datenschutz</a></span></div>
     </footer>
     <script src="assets/js/main.js" defer></script>
 </body>
