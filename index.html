@@ -1,0 +1,252 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Luxe Beauty | Lashes, Brows, Nails & Beauty Services</title>
+    <meta name="description"
+        content="Luxury beauty studio offering lashes, brows, nails, teeth whitening and premium treatments in an elegant atmosphere.">
+    <meta name="robots" content="index, follow">
+    <meta property="og:title" content="Luxe Beauty | Lashes, Brows, Nails & Beauty Services">
+    <meta property="og:description"
+        content="Luxury beauty studio offering lashes, brows, nails, teeth whitening and premium treatments in an elegant atmosphere.">
+    <meta property="og:type" content="website">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600&family=Montserrat:wght@400;500;600;700&display=swap"
+        rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <style>
+        /* Balanced service cards when fewer services are shown */
+        .services-overview .service-grid.service-grid-balanced {
+            width: min(92vw, 1320px) !important;
+            max-width: 1320px !important;
+            margin-left: auto !important;
+            margin-right: auto !important;
+            display: grid !important;
+            grid-template-columns: repeat(5, minmax(0, 1fr)) !important;
+            gap: 24px !important;
+        }
+
+        .services-overview .service-grid.service-grid-balanced .service-card {
+            width: 100% !important;
+            min-width: 0 !important;
+        }
+
+        .services-overview .service-grid.service-grid-balanced .service-card img {
+            width: 100% !important;
+            height: 235px !important;
+            object-fit: cover !important;
+        }
+
+        @media (max-width: 1199px) {
+            .services-overview .service-grid.service-grid-balanced {
+                grid-template-columns: repeat(3, minmax(0, 1fr)) !important;
+            }
+        }
+
+        @media (max-width: 767px) {
+            .services-overview .service-grid.service-grid-balanced {
+                width: min(90vw, 430px) !important;
+                grid-template-columns: 1fr !important;
+                gap: 18px !important;
+            }
+
+            .services-overview .service-grid.service-grid-balanced .service-card img {
+                height: 240px !important;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <header class="site-header" id="top"><a class="logo" href="index.html" aria-label="Luxe Beauty home"><span>Luxe
+                Beauty</span><small>Lashes • Brows • Nails</small></a>
+        <nav class="desktop-nav" aria-label="Primary navigation"><a class="active" href="index.html">Home</a><a class=""
+                href="services.html">Services</a><a class="" href="gallery.html">Gallery</a><a class=""
+                href="about.html">About Us</a><a class="" href="contact.html">Contact</a></nav><a
+            class="btn btn-beige desktop-book" href="contact.html">Book Appointment</a><button class="menu-toggle"
+            aria-label="Open menu" aria-expanded="false"><span></span><span></span><span></span></button>
+    </header>
+    <aside class="mobile-menu" aria-hidden="true">
+        <div class="mobile-menu-inner">
+            <div class="mobile-menu-top"><a class="logo" href="index.html"><span>Luxe Beauty</span><small>Lashes • Brows
+                        • Nails</small></a><button class="menu-close" aria-label="Close menu">×</button></div><a
+                class="active" href="index.html">Home</a><a class="" href="services.html">Services</a><a class=""
+                href="gallery.html">Gallery</a><a class="" href="about.html">About Us</a><a class=""
+                href="contact.html">Contact</a><a class="btn btn-dark full" href="contact.html">Book an Appointment</a>
+            <div class="mobile-socials"><a href="https://instagram.com/luxebeauty.ch" aria-label="Instagram"
+                    target="_blank"><i class="bi bi-instagram"></i></a><a href="https://wa.me/+41798688111"
+                    aria-label="WhatsApp" target="_blank"><i class="bi bi-whatsapp"></i></a><a
+                    href="https://www.google.com/maps/place/Dorfpl.+4,+3902+Brig-Glis,+Switzerland/" aria-label="Map"
+                    target="_blank"><i class="bi bi-geo-alt-fill"></i></a></div>
+        </div>
+    </aside>
+    <main>
+        <section class="hero">
+            <div class="hero-socials" aria-label="Social links"><a href="https://instagram.com/luxebeauty.ch"
+                    aria-label="Instagram" target="_blank"><i class="bi bi-instagram"></i></a><a
+                    href="https://wa.me/+41798688111" aria-label="WhatsApp" target="_blank"><i
+                        class="bi bi-whatsapp"></i></a><a
+                    href="https://www.google.com/maps/place/Dorfpl.+4,+3902+Brig-Glis,+Switzerland/" aria-label="Map"
+                    target="_blank"><i class="bi bi-geo-alt-fill"></i></a></div>
+            <div class="hero-content reveal">
+                <p class="eyebrow">Professional beauty services</p>
+                <h1>Enhancing your <em>natural</em> beauty.</h1>
+                <p>Professional beauty services in a luxurious atmosphere.</p><a class="btn btn-dark"
+                    href="booking.php">Book your appointment <span>→</span></a>
+            </div>
+        </section>
+        <section class="section services-overview reveal">
+            <p class="eyebrow center">Our Services</p>
+            <h2>Beauty tailored to perfection.</h2>
+            <div class="service-icons">
+                <div><span>⌁</span><strong>Lashes</strong></div>
+                <div><span>︵</span><strong>Brows</strong></div>
+                <div><span>♢</span><strong>Nails</strong></div>
+                <div><span>♡</span><strong>Teeth Whitening</strong></div>
+            </div>
+            <div class="service-grid service-grid-balanced">
+                <article class="service-card reveal"><img loading="lazy"
+                        src="https://images.unsplash.com/photo-1589710751893-f9a6770ad71b?auto=format&fit=crop&w=900&q=80"
+                        alt="Lash Extensions">
+                    <div class="service-card-body">
+                        <p class="service-category">Lashes</p>
+                        <h3>Lash Extensions</h3>
+                        <p>Classic, Hybrid, Volume, Wispy & more.</p><a href="services.html">More info <span>—</span></a>
+                    </div>
+                </article>
+                <article class="service-card reveal"><img loading="lazy"
+                        src="https://images.unsplash.com/photo-1596704017254-9b121068fb31?auto=format&fit=crop&w=900&q=80"
+                        alt="Lash Lifting">
+                    <div class="service-card-body">
+                        <p class="service-category">Lashes</p>
+                        <h3>Lash Lifting</h3>
+                        <p>A natural lift for beautiful lashes that last.</p><a href="services.html">More info
+                            <span>—</span></a>
+                    </div>
+                </article>
+                <article class="service-card reveal"><img loading="lazy"
+                        src="https://images.unsplash.com/photo-1621605815971-fbc98d665033?auto=format&fit=crop&w=900&q=80"
+                        alt="Brow Lifting">
+                    <div class="service-card-body">
+                        <p class="service-category">Brows</p>
+                        <h3>Brow Lifting</h3>
+                        <p>Perfectly shaped brows for a defined and flawless look.</p><a href="services.html">More info
+                            <span>—</span></a>
+                    </div>
+                </article>
+                <article class="service-card reveal"><img loading="lazy"
+                        src="https://images.unsplash.com/photo-1604654894610-df63bc536371?auto=format&fit=crop&w=900&q=80"
+                        alt="Nails">
+                    <div class="service-card-body">
+                        <p class="service-category">Nails</p>
+                        <h3>Nails</h3>
+                        <p>Manicure, Gel nails & Pedicure for a flawless finish.</p><a href="services.html">More info
+                            <span>—</span></a>
+                    </div>
+                </article>
+                <article class="service-card reveal"><img loading="lazy"
+                        src="https://images.unsplash.com/photo-1606811971618-4486d14f3f99?auto=format&fit=crop&w=900&q=80"
+                        alt="Teeth Whitening">
+                    <div class="service-card-body">
+                        <p class="service-category">Teeth Whitening</p>
+                        <h3>Teeth Whitening</h3>
+                        <p>Professional whitening for a brighter smile.</p><a href="services.html">More info
+                            <span>—</span></a>
+                    </div>
+                </article>
+                <!-- <article class="service-card reveal"><img loading="lazy"
+                        src="https://images.unsplash.com/photo-1570172619644-dfd03ed5d881?auto=format&fit=crop&w=900&q=80"
+                        alt="Facial Treatments">
+                    <div class="service-card-body">
+                        <p class="service-category">Face Care</p>
+                        <h3>Facial Treatments</h3>
+                        <p>Revitalizing skin treatments with luxurious care.</p><a href="services.html">More info
+                            <span>—</span></a>
+                    </div>
+                </article> -->
+                <!-- <article class="service-card reveal"><img loading="lazy"
+                        src="https://images.unsplash.com/photo-1519415510236-718bdfcd89c8?auto=format&fit=crop&w=900&q=80"
+                        alt="Waxing">
+                    <div class="service-card-body">
+                        <p class="service-category">Body Care</p>
+                        <h3>Waxing</h3>
+                        <p>Smooth, long-lasting results with gentle care.</p><a href="services.html">More info
+                            <span>—</span></a>
+                    </div>
+                </article> -->
+            </div>
+        </section>
+        <section class="about split-section">
+            <div class="split-copy reveal">
+                <p class="eyebrow">About Us</p>
+                <h2>Your <em>beauty</em>, our passion.</h2>
+                <p>At Luxe Beauty, our goal is to enhance your natural beauty with high-quality treatments and
+                    individual care.</p><a class="btn btn-dark" href="about.html">Learn More</a>
+            </div>
+            <div class="split-image reveal" role="img" aria-label="Luxury beauty studio interior"></div>
+        </section>
+        <br>
+        <section class="benefits reveal" aria-label="Benefits">
+            <div><span><i class="bi bi-award"></i></span><strong>Certified Treatments</strong>
+                <p>Professional and certified applications.</p>
+            </div>
+            <div><span><i class="bi bi-gem"></i></span><strong>High Quality Products</strong>
+                <p>Selected products for beautiful results.</p>
+            </div>
+            <div><span><i class="bi bi-person-heart"></i></span><strong>Individual Consultation</strong>
+                <p>Personal advice for your wishes.</p>
+            </div>
+            <div><span><i class="bi bi-shield-check"></i></span><strong>Hygienic Working</strong>
+                <p>Clean standards for your safety.</p>
+            </div>
+            <div><span><i class="bi bi-stars"></i></span><strong>Modern Techniques</strong>
+                <p>Always using refined techniques.</p>
+            </div>
+            <div><span><i class="bi bi-flower1"></i></span><strong>Relaxing Atmosphere</strong>
+                <p>Feel comfortable in a calm ambience.</p>
+            </div>
+        </section>
+        <section class="section gallery reveal">
+            <p class="eyebrow center">Gallery</p>
+            <h2>Results that speak for themselves.</h2>
+            <div class="gallery-grid"><img loading="lazy"
+                    src="https://images.unsplash.com/photo-1589710751893-f9a6770ad71b?auto=format&fit=crop&w=900&q=80"
+                    alt="Beauty treatment result"><img loading="lazy"
+                    src="https://images.unsplash.com/photo-1515377905703-c4788e51af15?auto=format&fit=crop&w=900&q=80"
+                    alt="Beauty studio interior"><img loading="lazy"
+                    src="https://images.unsplash.com/photo-1604654894610-df63bc536371?auto=format&fit=crop&w=900&q=80"
+                    alt="Nail treatment result"><img loading="lazy"
+                    src="https://images.unsplash.com/photo-1606811971618-4486d14f3f99?auto=format&fit=crop&w=900&q=80"
+                    alt="Teeth whitening result"></div><a class="text-link" href="gallery.html">View more</a>
+        </section>
+        <section class="appointment-band reveal">
+            <div class="calendar-icon"><i class="bi bi-calendar3"></i></div>
+            <p class="eyebrow center">Book an Appointment</p>
+            <h2>Your beauty is<br>just one click away.</h2><a class="btn btn-dark" href="contact.html">Book Now</a>
+        </section>
+    </main>
+    <footer class="site-footer">
+        <div><a class="logo" href="index.html"><span>Luxe Beauty</span><small>Lashes • Brows • Nails • Teeth
+                    Whitening</small></a></div>
+        <div><strong>Contact</strong>
+            <p>079 868 81 11<br>Dorfplatz 4, 3902 Glis<br>@luxebeauty.ch</p>
+        </div>
+        <div><strong>Opening Hours</strong>
+            <p>Termin nach Vereinbarung</p>
+        </div>
+        <div><strong>Follow Us</strong>
+            <p><a href="https://instagram.com/luxebeauty.ch" target="_blank">Instagram</a></p>
+        </div>
+        <div class="footer-bottom">© 2026 Luxe Beauty. All rights reserved. Build by Arian Kapllanaj<span><a href="#">Impressum</a> <a
+                    href="#">Datenschutz</a></span></div>
+    </footer>
+    <script src="assets/js/main.js" defer></script>
+</body>
+
+</html>
