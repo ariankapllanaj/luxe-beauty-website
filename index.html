@@ -233,7 +233,7 @@
     </main>
     <footer class="site-footer">
         <div><a class="logo" href="index.html"><span>Luxe Beauty</span><small>Lashes • Brows • Nails • Teeth
-                    Whitening</small></a></div>
+                    </small></a></div>
         <div><strong>Contact</strong>
             <p>079 868 81 11<br>Dorfplatz 4, 3902 Glis<br>@luxebeauty.ch</p>
         </div>
@@ -243,9 +243,131 @@
         <div><strong>Follow Us</strong>
             <p><a href="https://instagram.com/luxebeauty.ch" target="_blank">Instagram</a></p>
         </div>
-        <div class="footer-bottom">© 2026 Luxe Beauty. All rights reserved. Build by Arian Kapllanaj<span><a href="#">Impressum</a> <a
-                    href="#">Datenschutz</a></span></div>
+        <div class="footer-bottom">© 2026 Luxe Beauty. All rights reserved. Build by Arian Kapllanaj
+            <span class="legal-footer-links">
+                <button type="button" class="legal-link" data-legal-modal="imprint">Imprint</button>
+                <span class="legal-separator">|</span>
+                <button type="button" class="legal-link" data-legal-modal="privacy">Privacy Policy</button>
+                <span class="legal-separator">|</span>
+                <button type="button" class="legal-link" data-legal-modal="terms">Terms &amp; Conditions</button>
+            </span>
+        </div>
     </footer>
+
+    <div class="legal-modal" id="legal-modal-imprint" aria-hidden="true" role="dialog" aria-modal="true"
+        aria-labelledby="legal-title-imprint">
+        <div class="legal-modal-backdrop" data-legal-close></div>
+        <div class="legal-modal-panel" role="document">
+            <button type="button" class="legal-modal-close" aria-label="Close popup" data-legal-close>×</button>
+            <p class="eyebrow">Impressum</p>
+            <h2 id="legal-title-imprint">Impressum</h2>
+            <div class="legal-modal-content">
+                <h3>Luxe Beauty</h3>
+                <p><strong>Adresse</strong><br>Dorfplatz 4<br>3902 Glis<br>Schweiz</p>
+
+                <h3>Kontakt</h3>
+                <p><strong>Telefon</strong><br>079 868 81 11</p>
+                <p><strong>E-Mail</strong><br>info@luxebeauty.ch</p>
+                <p><strong>Instagram</strong><br>@luxebeauty.ch</p>
+
+                <h3>Verantwortlich für den Inhalt</h3>
+                <p>Milena Bogdanovic<br>Francesca Cazzolla</p>
+
+                <h3>Haftung</h3>
+                <p>Die Inhalte dieser Website wurden mit grösster Sorgfalt erstellt. Für die Richtigkeit,
+                    Vollständigkeit und Aktualität der bereitgestellten Informationen übernehmen wir jedoch keine
+                    Gewähr.</p>
+
+                <h3>Urheberrecht</h3>
+                <p>Sämtliche Inhalte, Bilder und Grafiken dieser Website sind urheberrechtlich geschützt. Eine
+                    Verwendung oder Vervielfältigung ohne vorherige schriftliche Zustimmung von Luxe Beauty ist nicht
+                    gestattet.</p>
+
+                <p>Bei Fragen stehen wir Ihnen jederzeit gerne zur Verfügung.</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="legal-modal" id="legal-modal-privacy" aria-hidden="true" role="dialog" aria-modal="true"
+        aria-labelledby="legal-title-privacy">
+        <div class="legal-modal-backdrop" data-legal-close></div>
+        <div class="legal-modal-panel" role="document">
+            <button type="button" class="legal-modal-close" aria-label="Close popup" data-legal-close>×</button>
+            <p class="eyebrow">Datenschutzerklärung</p>
+            <h2 id="legal-title-privacy">Datenschutzerklärung</h2>
+            <div class="legal-modal-content">
+                <h3>1. Verantwortliche Stelle</h3>
+                <p>Luxe Beauty<br>Dorfplatz 4<br>3902 Glis, Schweiz</p>
+                <p>E-Mail: info@luxebeauty.ch<br>Telefon: 079 868 81 11</p>
+
+                <h3>2. Erhebung und Verwendung von Daten</h3>
+                <p>Wir verarbeiten personenbezogene Daten ausschliesslich zur Bearbeitung von Terminanfragen,
+                    Terminbuchungen sowie zur Kommunikation mit unseren Kundinnen und Kunden.</p>
+
+                <h3>3. Terminbuchung</h3>
+                <p>Die Online-Terminbuchung erfolgt über Fresha. Dabei werden die für die Buchung erforderlichen Daten
+                    gemäss den Datenschutzbestimmungen von Fresha verarbeitet.</p>
+
+                <h3>4. Google Maps</h3>
+                <p>Unsere Website nutzt Google Maps, um Ihnen die Anfahrt zu unserem Studio zu erleichtern. Dabei
+                    können Daten an Google übermittelt werden.</p>
+
+                <h3>5. Ihre Rechte</h3>
+                <p>Sie haben jederzeit das Recht auf Auskunft, Berichtigung oder Löschung Ihrer personenbezogenen
+                    Daten. Bei Fragen kontaktieren Sie uns unter info@luxebeauty.ch.</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="legal-modal" id="legal-modal-terms" aria-hidden="true" role="dialog" aria-modal="true"
+        aria-labelledby="legal-title-terms">
+        <div class="legal-modal-backdrop" data-legal-close></div>
+        <div class="legal-modal-panel" role="document">
+            <button type="button" class="legal-modal-close" aria-label="Close popup" data-legal-close>×</button>
+            <p class="eyebrow">Allgemeine Geschäftsbedingungen</p>
+            <h2 id="legal-title-terms">Allgemeine Geschäftsbedingungen (AGB)</h2>
+            <div class="legal-modal-content">
+                <h3>1. Geltungsbereich</h3>
+                <p>Diese Allgemeinen Geschäftsbedingungen gelten für sämtliche Dienstleistungen von Luxe Beauty. Mit der
+                    Terminbuchung akzeptieren Sie diese AGB.</p>
+
+                <h3>2. Terminvereinbarung</h3>
+                <p>Termine können online über Fresha oder nach Vereinbarung gebucht werden. Eine Buchung ist nach
+                    Erhalt der Buchungsbestätigung verbindlich.</p>
+
+                <h3>3. Anzahlung</h3>
+                <p>Für ausgewählte Behandlungen oder Neukundinnen kann eine Anzahlung erforderlich sein. Diese wird
+                    vollständig auf den Behandlungspreis angerechnet.</p>
+
+                <h3>4. Terminabsagen</h3>
+                <p>Termine können bis 24 Stunden vor dem Termin kostenlos verschoben oder storniert werden.</p>
+                <p>Bei kurzfristigen Absagen oder Nichterscheinen behalten wir uns vor, die Anzahlung einzubehalten
+                    oder eine Ausfallgebühr zu verrechnen.</p>
+
+                <h3>5. Verspätungen</h3>
+                <p>Bitte erscheinen Sie pünktlich.</p>
+                <p>Bei einer Verspätung kann sich die Behandlungszeit verkürzen oder der Termin verschoben werden.</p>
+
+                <h3>6. Gesundheit &amp; Haftung</h3>
+                <p>Bitte informieren Sie uns vor der Behandlung über Allergien, Schwangerschaft, Medikamente oder andere
+                    gesundheitliche Einschränkungen.</p>
+                <p>Für allergische Reaktionen oder Komplikationen aufgrund unvollständiger oder falscher Angaben
+                    übernehmen wir keine Haftung.</p>
+
+                <h3>7. Behandlungsergebnisse</h3>
+                <p>Das Ergebnis einer Behandlung hängt unter anderem von den individuellen Voraussetzungen sowie der
+                    empfohlenen Nachpflege ab. Eine Erfolgsgarantie kann daher nicht gegeben werden.</p>
+
+                <h3>8. Gutscheine</h3>
+                <p>Gutscheine sind im Studio erhältlich.</p>
+
+                <h3>9. Schlussbestimmungen</h3>
+                <p>Es gilt ausschliesslich Schweizer Recht.</p>
+                <p>Gerichtsstand ist Brig-Glis, Schweiz.</p>
+            </div>
+        </div>
+    </div>
+
     <script src="assets/js/main.js" defer></script>
 </body>
 

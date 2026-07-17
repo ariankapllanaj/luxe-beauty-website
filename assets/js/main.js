@@ -64,3 +64,57 @@ document.addEventListener('DOMContentLoaded', () => {
     revealItems.forEach((item) => item.classList.add('show'));
   }
 });
+
+
+document.addEventListener('DOMContentLoaded', () => {
+  const legalTriggers = document.querySelectorAll('[data-legal-modal]');
+  const legalModals = document.querySelectorAll('.legal-modal');
+  let lastLegalTrigger = null;
+
+  const closeLegalModals = () => {
+    legalModals.forEach((modal) => {
+      modal.classList.remove('open');
+      modal.setAttribute('aria-hidden', 'true');
+    });
+    document.body.classList.remove('legal-modal-active');
+
+    if (lastLegalTrigger) {
+      lastLegalTrigger.focus();
+      lastLegalTrigger = null;
+    }
+  };
+
+  const openLegalModal = (modalName, trigger) => {
+    const modal = document.getElementById(`legal-modal-${modalName}`);
+    if (!modal) return;
+
+    lastLegalTrigger = trigger || null;
+    legalModals.forEach((item) => {
+      item.classList.remove('open');
+      item.setAttribute('aria-hidden', 'true');
+    });
+
+    modal.classList.add('open');
+    modal.setAttribute('aria-hidden', 'false');
+    document.body.classList.add('legal-modal-active');
+
+    const closeButton = modal.querySelector('[data-legal-close]');
+    if (closeButton) closeButton.focus();
+  };
+
+  legalTriggers.forEach((trigger) => {
+    trigger.addEventListener('click', () => {
+      openLegalModal(trigger.getAttribute('data-legal-modal'), trigger);
+    });
+  });
+
+  document.querySelectorAll('[data-legal-close]').forEach((closeButton) => {
+    closeButton.addEventListener('click', closeLegalModals);
+  });
+
+  document.addEventListener('keydown', (event) => {
+    if (event.key === 'Escape' && document.querySelector('.legal-modal.open')) {
+      closeLegalModals();
+    }
+  });
+});
