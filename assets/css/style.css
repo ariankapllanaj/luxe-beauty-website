@@ -311,6 +311,107 @@ h2 em {
     letter-spacing: .16em
 }
 
+.service-logo-icons {
+    display: grid !important;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 14px;
+    width: 100%;
+    max-width: 1180px;
+    margin: 42px auto 18px;
+}
+
+.service-logo-icons div {
+    background-color: #eee3d8;
+    min-height: 190px;
+    padding: 28px 14px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 22px;
+    border: 0;
+    box-shadow: none;
+    transition: transform .28s ease, background .28s ease;
+}
+
+.service-logo-icons div:hover {
+    transform: translateY(-5px);
+    background: #eee3d8;
+}
+
+.service-logo-icons img {
+    width: 58px;
+    height: 58px;
+    object-fit: contain;
+    mix-blend-mode: multiply;
+    transition: transform .35s ease;
+}
+
+.service-logo-icons div:hover img {
+    transform: scale(1.04);
+}
+
+.service-logo-icons strong {
+    font-size: 13px;
+    font-weight: 800;
+    letter-spacing: .18em;
+    text-transform: uppercase;
+    color: #111;
+}
+
+@media(max-width:991px) {
+    .service-logo-icons {
+        grid-template-columns: repeat(4, 1fr);
+        gap: 8px;
+        width: 100%;
+        max-width: 100%;
+        margin-left: 0;
+        margin-right: 0;
+    }
+
+    .service-logo-icons div {
+        min-height: 120px;
+        padding: 18px 6px;
+        gap: 14px;
+        background: #eee3d8;
+    }
+
+    .service-logo-icons img {
+        width: 38px;
+        height: 38px;
+    }
+
+    .service-logo-icons strong {
+        font-size: 9px;
+        letter-spacing: .12em;
+    }
+}
+
+@media(max-width:520px) {
+    .service-logo-icons {
+        grid-template-columns: repeat(4, 1fr);
+        gap: 6px;
+        width: 100%;
+        max-width: 100%;
+    }
+
+    .service-logo-icons div {
+        min-height: 110px;
+        padding: 16px 5px;
+    }
+
+    .service-logo-icons img {
+        width: 34px;
+        height: 34px;
+    }
+
+    .service-logo-icons strong {
+        font-size: 8px;
+        letter-spacing: .10em;
+    }
+}
+
+
 .service-grid {
     display: grid;
     grid-template-columns: repeat(7, minmax(0, 1fr));
@@ -1478,5 +1579,250 @@ body.legal-modal-active {
 
     .legal-modal-close {
         margin: -12px -8px 10px 16px;
+    }
+}
+
+/* Final responsive fix: service logo icons 4-2-1 layout
+   iPad/tablet: 4 in one row
+   medium mobile: 2 by 2
+   small mobile: 1 by 1
+*/
+.services-overview .service-icons.service-logo-icons {
+    display: grid !important;
+    width: 100% !important;
+    max-width: 1180px !important;
+    margin: 42px auto 18px !important;
+    grid-template-columns: repeat(4, minmax(0, 1fr)) !important;
+    gap: 18px !important;
+}
+
+.services-overview .service-icons.service-logo-icons > div {
+    width: 100% !important;
+    min-width: 0 !important;
+    max-width: none !important;
+    min-height: 190px !important;
+    padding: 28px 14px !important;
+    background: #f2ece6;
+    display: flex !important;
+    flex-direction: column !important;
+    justify-content: center !important;
+    align-items: center !important;
+    gap: 22px !important;
+    border: 0 !important;
+    box-shadow: none !important;
+    text-align: center !important;
+}
+
+.services-overview .service-icons.service-logo-icons img {
+    display: block !important;
+    width: 58px !important;
+    height: 58px !important;
+    object-fit: contain !important;
+    mix-blend-mode: multiply;
+    margin: 0 auto !important;
+}
+
+.services-overview .service-icons.service-logo-icons strong {
+    display: block !important;
+    font-size: 13px !important;
+    font-weight: 800 !important;
+    letter-spacing: .18em !important;
+    text-transform: uppercase !important;
+    color: #111 !important;
+    white-space: nowrap !important;
+}
+
+/* iPad / tablet: keep all 4 in one row */
+@media (max-width: 991px) {
+    .services-overview {
+        padding-left: 24px !important;
+        padding-right: 24px !important;
+    }
+
+    .services-overview .service-icons.service-logo-icons {
+        grid-template-columns: repeat(4, minmax(0, 1fr)) !important;
+        width: 100% !important;
+        max-width: 100% !important;
+        gap: 12px !important;
+        margin-left: 0 !important;
+        margin-right: 0 !important;
+    }
+
+    .services-overview .service-icons.service-logo-icons > div {
+        min-height: 150px !important;
+        padding: 22px 8px !important;
+        gap: 16px !important;
+    }
+
+    .services-overview .service-icons.service-logo-icons img {
+        width: 48px !important;
+        height: 48px !important;
+    }
+
+    .services-overview .service-icons.service-logo-icons strong {
+        font-size: 10px !important;
+        letter-spacing: .10em !important;
+    }
+}
+
+/* Medium mobile: 2 by 2 */
+@media (max-width: 767px) {
+    .services-overview .service-icons.service-logo-icons {
+        grid-template-columns: repeat(2, minmax(0, 1fr)) !important;
+        gap: 14px !important;
+    }
+
+    .services-overview .service-icons.service-logo-icons > div {
+        min-height: 190px !important;
+        padding: 28px 14px !important;
+        gap: 20px !important;
+    }
+
+    .services-overview .service-icons.service-logo-icons img {
+        width: 78px !important;
+        height: 78px !important;
+    }
+
+    .services-overview .service-icons.service-logo-icons strong {
+        font-size: 12px !important;
+        letter-spacing: .16em !important;
+    }
+}
+
+/* Small mobile: 1 by 1 */
+@media (max-width: 520px) {
+    .services-overview .service-icons.service-logo-icons {
+        grid-template-columns: 1fr !important;
+        gap: 18px !important;
+        width: 100% !important;
+        max-width: 100% !important;
+    }
+
+    .services-overview .service-icons.service-logo-icons > div {
+        width: 100% !important;
+        min-height: 250px !important;
+        padding: 34px 24px !important;
+    }
+
+    .services-overview .service-icons.service-logo-icons img {
+        width: 130px !important;
+        height: 130px !important;
+    }
+
+    .services-overview .service-icons.service-logo-icons strong {
+        font-size: 13px !important;
+        letter-spacing: .22em !important;
+    }
+}
+
+/* Service image icons section */
+.service-image-icons {
+    display: grid;
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+    gap: 18px;
+    width: 100%;
+    max-width: 1180px;
+    margin: 42px auto 18px;
+}
+
+.service-image-icons > div {
+    background: #f2ece6;
+    min-height: 220px;
+    padding: 28px 18px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 22px;
+    text-align: center;
+    transition: transform .28s ease, background .28s ease;
+}
+
+.service-image-icons > div:hover {
+    transform: translateY(-5px);
+    background: #eee4db;
+}
+
+.service-image-icons img {
+    width: 95px;
+    height: 95px;
+    object-fit: contain;
+    mix-blend-mode: multiply;
+}
+
+.service-image-icons strong {
+    font-size: 13px;
+    font-weight: 800;
+    letter-spacing: .18em;
+    text-transform: uppercase;
+    color: #111;
+}
+
+@media(max-width:991px) {
+    .service-image-icons {
+        grid-template-columns: repeat(4, minmax(0, 1fr));
+        gap: 12px;
+        max-width: 100%;
+    }
+
+    .service-image-icons > div {
+        min-height: 165px;
+        padding: 22px 8px;
+        gap: 16px;
+    }
+
+    .service-image-icons img {
+        width: 58px;
+        height: 58px;
+    }
+
+    .service-image-icons strong {
+        font-size: 9px;
+        letter-spacing: .08em;
+    }
+}
+
+@media(max-width:767px) {
+    .service-image-icons {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        gap: 14px;
+    }
+
+    .service-image-icons > div {
+        min-height: 200px;
+        padding: 28px 14px;
+        gap: 20px;
+    }
+
+    .service-image-icons img {
+        width: 88px;
+        height: 88px;
+    }
+
+    .service-image-icons strong {
+        font-size: 12px;
+        letter-spacing: .16em;
+    }
+}
+
+@media(max-width:520px) {
+    .service-image-icons {
+        grid-template-columns: 1fr;
+        gap: 18px;
+    }
+
+    .service-image-icons > div {
+        min-height: 250px;
+        padding: 34px 24px;
+    }
+
+    .service-image-icons img {
+        width: 135px;
+        height: 135px;
+    }
+
+    .service-image-icons strong {
+        font-size: 13px;
+        letter-spacing: .22em;
     }
 }
